@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=La+Belle+Aurore&family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto:wght@100;400&family=Zen+Dots&display=swap');
+
+
+/* Lagyan niyo ng "Start of ____ Style" tapos "End of Style" para madali mabasa */
+
+
+/* START: Of Navigation Style */
+.primary-header {
+  display: flex;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  background: #812220;
+  color: white;
+  font-weight: bold;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  font-family: 'Zen Dots', sans-serif;
+  position: fixed;
+  z-index: 100;
+}
+
+.primary-header h1{
+  font-size: 1.5rem;
+}
+
+.navigation {
+  padding-right: 25px;
+  position: relative;
+}
+
+.dropdownTitle {
+  text-transform: uppercase;
+  font-family: 'Zen Dots', sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.webpages {
+  background: #812220;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a.currentWebPage {
+  color: #812220;
+}
+
+/* END: of Navigation Style */
+
+/* START: Carousel Style (Lim)*/
+
+.carousel-item img {
+  margin: 5em 1em 1em 17em;
+  width: 65%;
+  position: relative;
+  justify-content: center;
+  
+}
+
+.carousels button{
+  color: black;
+  background-color: black;
+  padding: 2%;
+}
+
+.carousel-inner {
+  background-color: grey;
+}
+
+/* END: Carousel Style*/
+
+/*START : Precolonial Writing (Ballesteros)*/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paragraph {
+  width: 60%;
+}
+
+.paragraph img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  width: 72%;
+}
+
+.header h2 {
+  font-size: 50px ;
+  color: black;
+  margin-left: 2em;
+}
+
+.bullet {
+  margin-right: 10px;
+  color: #000000;
+}
+
+p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+/*END : Precolonial Writing */
+
+/*START : Literary Forms (Tubice, Arroyo)*/
+
+.main-paragraph {
+  text-align: left;
+  margin-bottom: 40px;
+  margin : 2% 6% 6% 6%;
+}
+
+.main-paragraph p {
+  font-size: 22px;
+}
+
+.column-container {
+  display: flex;
+  margin: 100px;
+}
+
+.column {
+  width: 100%;
+  margin: 0 20px;
+  text-align: left;
+}
+
+.column li {
+  font-size: 19px;
+}
+
+.column-container h2 {
+  font-size: 25px;
+}
+
+/*END : Literary Forms*/
+/* Footer */
+footer {
+  display: flex;
+  gap: 3rem;
+  padding: 25px 50px;
+  background: #812220;
+  color: #FFFFFF;
+  font-family: 'Arimo', sans-serif;
+}
+
+footer > * {
+  flex-basis: 50%;
+}
+
+footer .lagro-logo {
+  margin-top: 20px;
+  height: 70px;
+  width: 70px;
+}
+
+footer .about-team h3{
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
+
+footer h5 {
+  font-size: 1.5rem;
+}

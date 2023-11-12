@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=La+Belle+Aurore&family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto:wght@100;400&family=Zen+Dots&display=swap');
+
+
+/* Lagyan niyo ng "Start of ____ Style" tapos "End of Style" para madali mabasa */
+
+
+/* START: General Styling */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  padding-top: 1rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+.btn {
+  background-color: #FFD21F;
+  color: #B40000;
+  border: none;
+  outline: none;
+  padding: 8px 35px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: .5s;
+}
+
+.btn:hover {
+  background: #e4bc1c;
+}
+
+/* END: General Styling */
+
+/* START: Of Navigation Style */
+.primary-header {
+  display: flex;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  background: #812220;
+  color: white;
+  font-weight: bold;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  font-family: 'Zen Dots', sans-serif;
+  position: fixed;
+  z-index: 100;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.primary-header h1{
+  font-size: 1.5rem;
+}
+
+.navigation {
+  padding-right: 25px;
+  position: relative;
+}
+
+.navigation ul {
+  background: #812220;
+  text-align: right;
+  position: absolute;
+  right: 0; 
+  width: 280%;
+  padding: 20px;
+  z-index: 1;
+  display: none;
+  transform: .3s;
+}
+
+.navigation ul li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.navigation ul {
+  display: block;
+}
+
+.dropdownTitle {
+  text-transform: uppercase;
+  font-family: 'Zen Dots', sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.webpages {
+  background: #812220;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a.currentWebPage {
+  color: #812220;
+}
+/* END: of Navigation Style */
+
+/* Main */
+
+/* START: of Hero Style */
+.hero {
+  position: relative;
+  background:url(images/Visayans-Before-Spanish-Colonization-MAIN-IMAGE-transformed.jpeg) no-repeat;
+  background-position: 0 -5px;
+  background-size: 100%;
+  height: calc(100vh - 56px);
+}
+
+.gradient {
+  position: absolute;
+  background:linear-gradient(360deg, #e00501 10%, #880503 25%, #812220 40%, rgba(0,0,0,.5));
+  opacity: .5;
+  height: calc(100vh - 56px);
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  gap: 10px;
+  position: absolute;
+  color: white;
+  bottom: 50px;
+  right: 50px;
+  text-align: right;
+  font-family: 'Arimo', sans-serif;
+}
+
+.description h1 {
+  font-size: 3.5rem;
+  letter-spacing: .3rem;
+  margin-bottom: -10px;
+  font-weight: 700;
+}
+
+.description h4 {
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+
+/* END: of Hero Style */
+
+
+/* Servillano Dito code sa baba */
+.row {
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.literatures {
+  padding: 80px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+}
+
+.pic {
+  display: flex;
+  flex-basis: 20%;
+  gap: 20px;
+  flex-direction: column;
+  align-content: center;
+}
+
+.pic img {
+  width: 100%;
+  height: 350px;
+  border-radius: 1px;
+}
+
+.pic a {
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+}
+
+.pic a::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color:rgba(0, 0, 0, 70%);
+  transform: scale(0);
+  transition: transform .5s linear;
+}
+
+.pic a:hover::after {
+  transform-origin: center;
+  transform: scale(1);
+}
+
+
+/* Eumir Dito code sa baba */
+.pos_cen{
+  display: flex;
+  gap: 70px;
+  padding: 50px;
+}
+
+.text-box {
+  font-family: 'Arimo', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  gap: 20px;
+  flex-basis: 55%;
+}
+
+.pos_cen div:last-of-type {
+  flex-basis: 40%;
+}
+
+.text-box h1 {
+  font-size: 2.5rem;
+}
+
+.text-box p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.samples {
+  height: 450px;
+}
+
+/*  Palma Dito code sa baba  */
+.pos_cen{
+  display: flex;
+  gap: 70px;
+  padding: 50px;
+}
+
+.text-box {
+  font-family: 'Arimo', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  gap: 20px;
+  flex-basis: 55%;
+}
+
+.pos_cen div:last-of-type {
+  flex-basis: 40%;
+}
+
+.text-box h1 {
+  font-size: 2.5rem;
+}
+
+.text-box p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.samples {
+  height: 450px;
+}
+
+/*  Palma Dito code sa baba  */
+.literature_list {
+  padding: 10px 50px 40px;
+  font-family: 'Arimo', sans-serif;
+  display: flex;
+  gap: 20px;
+}
+
+.literature_list > * {
+  flex-basis: 45%;
+}
+
+.literature_list h1 {
+  font-size: 2rem;
+  padding-left: 3rem;
+  margin-bottom: 12px;
+}
+
+.literature_list ul{
+  padding-left: 6rem;
+  font-size: 1.2rem;
+}
+
+.literature_list ul li {
+  padding: 3px 0;
+}
+
+.forms span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Bocateja Dito code sa baba */
+.pre-colonial {
+  display: flex;
+  padding: 80px 50px;
+  /* gap: 150px; */
+  font-family: 'Arimo', sans-serif;
+}
+
+.pre-colonial div:first-child {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 20px;
+  align-items: start;
+  flex-basis: 70%;
+}
+
+.pre-colonial h1 {
+  font-size: 2rem;
+}
+
+.pre-colonial p {
+  font-size: 1.3rem;
+  width: 80%;
+  text-align: justify;
+}
+
+.pre-colonial div:last-child {
+  flex-basis: 25%;
+}
+
+.pre-colonial img {
+  height: 100%;
+}
+
+.pre-colonial .btn {
+  margin-top: 30px;
+}
+
+/* Writing System */
+.writing-system {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+  font-family: 'Arimo', sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 180px;
+}
+
+.content img {
+  height: 380px;
+  width: 380px;
+  margin-right: -80px;
+}
+
+.content div {
+  flex-basis: 60%;
+}
+
+.content div p {
+  font-size: 1.3rem;
+  width: 80%;
+  text-align: justify;
+}
+
+.content img {
+  flex-basis: 35%;
+}
+
+/* Ocaya dito sa baba */
+footer {
+  display: flex;
+  gap: 3rem;
+  padding: 25px 50px;
+  background: #812220;
+  color: #FFFFFF;
+  font-family: 'Arimo', sans-serif;
+}
+
+footer > * {
+  flex-basis: 50%;
+}
+
+footer .lagro-logo {
+  margin-top: 20px;
+  height: 70px;
+  width: 70px;
+}
+
+footer .about-team h3{
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
+
+footer h5 {
+  font-size: 1.5rem;
+}
+

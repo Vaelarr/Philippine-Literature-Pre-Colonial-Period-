@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baybayin</title>
+  <link rel="stylesheet" href="css/writingSystems-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header class="primary-header">
+      <h1 class="title" style="margin-top: 8px; color:white">Philippine Literature</h1>
+      
+      <nav class="navigation">
+        <div class="dropdown">
+          <button class="webpages">
+            <h1 style="color: #fff;" class="dropdownTitle">&nbsp &nbsp &nbsp &nbsp Baybayin</h1>
+          </button>
+          <div class="dropdown-content">
+            <a href="index.html">
+              Home
+            </a>
+            <a href="LiteraryForms.html">
+              Literary Forms
+            </a>
+            <a href="writingSystems.html" class="currentWebPage">
+              Baybayin
+            </a>
+            <a href="LiteraryPieces.html">
+              Literary pieces
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <!-- Sec1 -->
+        <h1 id="header-texts" style="padding-top: 120px;">
+          Baybayin
+        </h1>
+
+        <p class="listed-paragraph">
+          &nbsp One of the precolonial writing systems that the early Filipinos utilized was called baybayin. The Tagalog root word baybay, which meaning "to spell," is where the phrase "baybayin" originates due to the arrangement of another alphabet system, Arabic, whose initial letters are designated alif, ba, and ta, the script was mistakenly termed "alibata" for a long time the majority of the indigenous people of the Philippine archipelago, not only the elite, were literate when the Spaniards first arrived. In addition to recording, the script was used to write letters, poetry, and incantations.
+        </p>
+        <br>
+        <p class="listed-paragraph">
+          &nbsp In technical terms, the Baybayin is classified as an alphasyllabary, where each character is derived from a consonant letter, with a corresponding vowel notation indicating the vowel sound. The system comprises 14 syllabic consonant characters (or 15 if the "da" and "ra" consonants are considered separately, as depicted in the images). Additionally, there are three vowel characters for "a," "e-i," and "o-u."
+        </p>
+
+        <br>
+        <br>
+        <br>
+        
+      <!-- Sec2 -->
+        <h1 id="header-texts" style="padding-top: 80px;">
+          Baybayin Characters
+        </h1>
+        <center>
+          <img src="images/baybayin-characters.png" alt="baybayin-characters" id="baybayin-characters-img">
+        </center>
+        
+        <br>
+        <br>
+        <br>
+        
+      <!-- Sec3 -->
+        <p class="listed-paragraph">
+          &nbsp The consonant characters represent a combination of the consonant sound and the vowel sound “a.” To modify this to the “e-I” sound, a kudlit or mark is added on top of the character, while for the “o-u” sound, the mark is positioned at the bottom.
+        </p>
+        <p class="listed-paragraph">
+          &nbsp The Spanish friars extensively examined Baybayin and utilized it as a tool for imparting Catholic teachings to the Filipino population. Notably, a section of the Doctrina Christiana, one of the earliest printed books in the country, incorporates both Baybayin script and Latinized Tagalog.
+        </p>
+        <p class="listed-paragraph">
+          &nbsp To signify standalone consonants, the Spanish introduced a cross mark at the bottom of Baybayin characters. For instance, the original Baybayin representation of the word for God, "Bathala," was written as "Bahala." Employing this cross mark, Spanish writers employed a different character, "ta," and added a cross at the bottom to eliminate the "a" sound.
+        </p>
+
+        <br>
+        <br>
+        <br>
+
+
+      <!-- Sec4 -->
+      <h1 id="header-texts">
+        Baybayin | Choose the correct answer!
+      </h1>
+      <p style="text-align: center;">Click Generate to start.</p>
+      <div id="container">
+        <center>
+          <label for="numImages">
+            Number of Pictures:
+          </label>
+          <input type="number" id="numImages" min="1" min="20" step="1" value="5">
+          <br>
+          <label for="imageWidth">
+            Image Width (px):
+          </label>
+          <input type="range" id="imageWidth" min="20" step="10" value="60">
+          <span id="imageWidthValue">
+            60px
+          </span>
+          <button id="generate">
+            Generate
+          </button>
+          <div id="theme-selector">
+            <label for="themeSelect">
+              Select Theme:
+            </label>
+            <select id="themeSelect">
+              <option value="theme1">
+                Theme 1
+              </option>
+              <option value="theme2">
+                Theme 2
+              </option>
+            </select>
+          </div>
+        
+          <br>
+          <br>
+        
+          <p id="description">
+          </p>
+        
+          <div id="output">
+          </div>
+          <p id="result">
+          </p>
+          <p id="score">
+            Score:
+            <span id="scoreValue">
+            </span>
+          </p>
+        </center>
+      </div>
+
+      <script src="baybayin-character.js"></script>
+
+
+      <!-- Sec5 -->
+      <h1 id="header-texts">
+        Baybayin | Enter the correct word!
+      </h1>
+      
+      <div id="container" >
+        <center>
+          <label for="imageWidth2">Image Width (px):</label>
+          <input type="range" id="imageWidth2" min="20" max="400" step="20" value="400">
+          <span id="imageWidthValue2">400px</span>
+      
+          <br>
+          <br>
+      
+          <div id="display">
+            <img src="" id="displayedImage">
+            <p class="image-description" id="displayedDescription"></p>
+          </div>
+      
+          <label for="text">Enter for word:</label>
+          <input id="text" rows="4" cols="40">
+          <br>
+          <button id="submit">Submit</button>
+          <p id="feedback"></p>
+        </center>
+      </div>
+      
+      <script src="baybayin-word.js"></script>
+
+      <br>
+      <br>
+      <br>
+
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="about-team">
+          <h3>About the Website</h3>
+          <p>This website is a special project created by Grade 12 ICT students of the section Babbage from Lagro High School in cooperation with their 21st Century Literature teacher. Focusing on the topic of Literature in the Pre-Colonial Period of the Philippines, information such as the different literary forms, writing systems specifically Baybayin and a few examples of literary pieces were added.
+          </p>
+          <img src="images/lagro-logo.png" alt="" class="lagro-logo">
+        </div>
+        <div class="Teams">
+          <div class="content-team" style="margin-bottom: 8px;">
+            <h5>Content Team</h5>
+            <p>Tupaen, Cadavis, Apilado, Cabrera, Fuentebella, Mabahin</p>
+          </div>
+
+          <div class="ui-team"  style="margin-bottom: 8px;">
+            <h5>UI/UX Designer</h5>
+            <p>Pamplona, Jacob, Nicolas, Reginaldo, Fuentes</p>
+          </div>
+
+          <div class="front-end-team">
+            <h5>Front-End Developers</h5>
+            <p>Verano, Juntilla, Romero, Caayon, Tupaen, Lim, De Guzman, Palma, Bocateja, Amoncio, Ocaya, Garcia, Buizon, Laurita, Dela Cruz, Sumayo, Cator, Valles, Fuentebella, Tubice, Ballesteros, Arroyo, Ventura</p>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+</body>
+</html>
